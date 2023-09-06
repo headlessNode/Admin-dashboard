@@ -43,6 +43,12 @@ body{
     align-items: center;
 }
 
+.menu-bar button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
 .greetings-container{
     padding: 10px;
     grid-column: 1/4;
@@ -119,8 +125,9 @@ input[type="text"]{
     top: 0;
     right: 0;
     height: 100%;
-    width: 150px;
-    background: #9A8C98;
+    width: 0;
+    background: #0B3C49;
+    transition: all 0.2s ease;
 }
 
 .sidebar .sidebar-content{
@@ -144,6 +151,9 @@ input[type="text"]{
     > em {
         color: lightgray;
     }
+    > p{
+        color: white;
+    }
 }
 
 .links{
@@ -152,6 +162,9 @@ input[type="text"]{
     justify-items: center;
     align-items: center;
     width: 80%;
+    > li > button{
+        color: white;
+    }
 }
 
 .settings{
@@ -160,6 +173,9 @@ input[type="text"]{
     align-items: center;
     justify-items: center;
     width: 95%;
+    > li > button{
+        color: white;
+    }
 }
 
 
@@ -171,5 +187,29 @@ input[type="text"]{
     padding: 10px;
     background: none;
     border: none;
+    border-radius: 10px;
     width: 8rem;
+}
+
+.sidebar-content ul li button:hover{
+    transition: all 0.2s ease;
+    background-color: #13657C;    
+}
+
+.hide-btn{
+    border-radius: 10px;
+    padding: 10px;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    width: 8rem;
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.hide-btn:hover{
+    transition: all 0.2s ease;
+    background-color: #13657C;
 }
