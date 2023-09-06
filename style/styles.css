@@ -111,3 +111,65 @@ input[type="text"]{
     width: 250px;
     height: 25px;
 }
+
+.wrapper .sidebar{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 150px;
+    background: #9A8C98;
+}
+
+.sidebar .sidebar-content{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(6,1fr);
+    justify-self: center;
+}
+
+.sidebar-content img{
+    height: 3rem;
+    border-radius: 30px;
+}
+
+.sidebar-content .sidebar-top{
+    grid-row: 1/3;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    > em {
+        color: lightgray;
+    }
+}
+
+.links{
+    grid-row: 3/5;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+}
+
+.settings{
+    grid-row: 5/7;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 95%;
+}
+
+
+.sidebar-content ul li button{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    background: none;
+    border: none;
+    width: 8rem;
+}
