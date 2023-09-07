@@ -312,13 +312,10 @@ input[type="text"]{
     gap: 10px;
 }
 
-.learnings > * {
-    border: 1px solid;
-}
-
 .learnings .learnings-header{
     display: grid;
     grid-template-columns: 1fr 0.1fr;
+    gap: 10px;
 }
 
 .learnings-header .heading{
@@ -331,6 +328,10 @@ input[type="text"]{
     grid-column: 1/2;
     grid-row: 2/3;
     opacity: 0.5;
+}
+
+.learnings-header .icon{
+    justify-self: center;
 }
 
 .learnings .learnings-progress{
@@ -351,6 +352,7 @@ input[type="text"]{
     grid-row: 1/3;
     align-self: center;
     justify-self: center;
+    height: 3rem;
 }
 
 .learnings-card .heading{
