@@ -278,7 +278,25 @@ input[type="text"]{
 .announcement .end-txt{
     grid-column: 1/2;
     grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    height: 1.5rem;
+    width: 10rem;
+    align-items: center;
+    justify-items: start;
     align-self: center;
+}
+
+.announcement .end-txt .icon{
+    padding: 4px 10px 4px 10px;
+    border-radius: 80px;
+    display: grid;
+    height: 1rem;
+    align-items: center;
+}
+
+.announcement .end-txt p{
+    font-size: 1rem;
 }
 
 .announcement .time{
