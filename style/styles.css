@@ -140,6 +140,7 @@ input[type="text"]{
     width: 0;
     background: #0B3C49;
     transition: all 0.2s ease;
+    z-index: 2;
 }
 
 .sidebar .sidebar-content{
