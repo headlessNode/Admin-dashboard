@@ -16,41 +16,54 @@ body{
 
 .header{
     padding: 20px 0 20px 0;
+    justify-self: center;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-columns: repeat(4,minmax(140px, 400px));
+    align-items: center;
     gap: 1rem;
-}
-
-.header > * {
-    /* border: 1px solid; */
+    justify-self: center;
 }
 
 .profile{
+    width: 60%;
     grid-column: 1/5;
     grid-row: 2/3;
+    justify-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
     align-items: center;
     justify-items: center;
+    gap: 10px;
+
+}
+
+.profile .user-name{
+    display: grid;
+    justify-items: center;
+}
+
+.profile .user-name p{
+    opacity: 0.5;
 }
 
 .profile .bell-icon{
     height: 2rem;
+    cursor: pointer;
 }
 
 .profile .profile-pic{
     height: 3rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .search{
     grid-column: 1/4;
-    grid-row: 1/2;
     display: grid;
-    grid-template-columns: 3rem 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
     align-items: center;
-    justify-items:center;
+    justify-items: end;
 }
 
 input[type="text"]{
@@ -66,9 +79,9 @@ input[type="text"]{
     padding: 10px;
     grid-column: 4/5;
     grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    justify-self: start;
+
 }
 
 .menu-bar button{
@@ -79,16 +92,17 @@ input[type="text"]{
 }
 
 .menu-bar button:hover{
-    translate: -8px;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
 .nav-buttons{
     grid-column: 1/5;
     grid-row: 3/4;
+    width: 60%;
+    justify-self: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .nav-buttons > button{
@@ -101,9 +115,10 @@ input[type="text"]{
     background: black;
     border-radius: 20px;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
-.nav-buttons > button:focus{
+.nav-buttons > button:hover{
     background: #2F3337;
 }
 
