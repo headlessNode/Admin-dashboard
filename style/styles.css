@@ -17,12 +17,10 @@ body{
 .header{
     border: 1px solid;
     padding: 20px 0 20px 0;
-    justify-self: center;
     display: grid;
-    grid-template-columns: repeat(4,minmax(100px, 450px));
+    grid-template-columns: repeat(4,minmax(100px, 1fr));
     align-items: center;
     gap: 2rem;
-    justify-self: center;
 }
 
 .header > *{
@@ -227,10 +225,20 @@ input[type="text"]{
     background-color: #13657C;
 }
 
+/* MAIN CONTENT OF THE PAGE */
+
 .main-content{
+    border: 1px solid;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px ,880px));
     padding: 10px;
     gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-content > *{
+    border: 1px solid;
 }
 
 .projects{
