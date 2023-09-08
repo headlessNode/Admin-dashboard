@@ -66,6 +66,7 @@ body{
     grid-template-columns: 1fr 10fr;
     align-items: center;
     justify-items: center;
+    gap: 15px;
 }
 
 .search #search-icon{
@@ -230,11 +231,10 @@ input[type="text"]{
 .main-content{
     border: 1px solid;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px ,880px));
+    grid-template-columns: repeat(auto-fill,minmax(600px, 1fr));
     padding: 10px;
     gap: 20px;
     justify-content: center;
-    align-content: center;
 }
 
 .main-content > *{
@@ -243,6 +243,8 @@ input[type="text"]{
 
 .projects{
     display: grid;
+    grid-template-rows: 0.1fr 2.5fr;
+    grid-row: 1/3;
     background: white;
     padding: 10px;
     gap: 10px;
@@ -250,6 +252,7 @@ input[type="text"]{
 
 .projects .cards{
     display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 2rem;
 
 }
@@ -386,4 +389,19 @@ input[type="text"]{
     justify-self: center;
     font-size: small;
     opacity: 0.5;
+}
+
+@media only screen and (min-width: 1861px){
+    .announcements-container{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .learnings{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .projects{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
 }
