@@ -12,6 +12,7 @@ body{
 .wrapper{
     display: grid;
     padding-bottom: 20px;
+    gap: 2rem;
 }
 
 .header{
@@ -173,6 +174,7 @@ input[type="text"]{
     width: 80%;
     > li > button{
         color: white;
+        cursor: pointer;
     }
 }
 
@@ -184,6 +186,7 @@ input[type="text"]{
     width: 95%;
     > li > button{
         color: white;
+        cursor: pointer;
     }
 }
 
@@ -216,6 +219,7 @@ input[type="text"]{
     border: none;
     background: none;
     color: white;
+    cursor: pointer;
 }
 
 .hide-btn:hover{
