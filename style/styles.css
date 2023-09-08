@@ -407,7 +407,7 @@ input[type="text"]{
 
 @media only screen and (min-width: 280px) and (max-width: 960px) {
     body {
-      zoom: 0.8;
+      zoom: 0.6;
     }
   }
   
